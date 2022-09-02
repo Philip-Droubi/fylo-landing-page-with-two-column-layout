@@ -1,0 +1,574 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&family=Orbitron:wght@400;500;600;700;800;900&family=Outfit:wght@400;700&family=Raleway:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+
+:root {
+    --Very-Dark-Blue: hsl(243, 87%, 12%);
+    --Desaturated-Blue: hsl(238, 22%, 44%);
+    --Bright-Blue: hsl(224, 93%, 58%);
+    --Bright-Blue-hover: hsl(224, 96%, 71%);
+    --Moderate-Cyan: hsl(170, 45%, 43%);
+    --Moderate-Cyan-hover: hsla(170, 45%, 43%, 0.671);
+    --Light-Grayish-Blue: hsl(240, 75%, 98%);
+    --Light-Gray: hsl(0, 0%, 75%);
+    --margin: 80px;
+}
+
+/* Start global rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* XLarge */
+@media (min-width: 1400px) {
+    .container {
+        width: 1350px;
+    }
+}
+
+h1 {
+    font-weight: 700;
+    font-family: "Raleway", sans-serif;
+    color: var(--Very-Dark-Blue);
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: var(--font-size);
+    min-height: 100vh;
+}
+
+nav {
+    padding-top: 20px;
+}
+
+form {
+    position: relative;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .container li {
+    display: inline-block;
+}
+
+nav .container li a {
+    color: var(--Desaturated-Blue);
+    text-decoration: none;
+    transition: 0.2s;
+    position: relative;
+}
+
+nav .container li:nth-child(2) {
+    margin: 0 30px;
+}
+
+nav .container li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    border-radius: 3px;
+    background-color: var(--Desaturated-Blue);
+    transition: 0.2s;
+}
+
+nav .container li a:hover::after {
+    width: 100%;
+}
+
+.section {
+    margin-top: var(--margin);
+    position: relative;
+}
+
+.section .container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section .container .text {
+    flex-basis: 41%;
+}
+
+.section .container .text p {
+    max-width: 550px;
+    margin: 18px 0;
+    color: var(--Desaturated-Blue);
+}
+
+form input[type=email] {
+    position: relative !important;
+}
+
+.section .container input[type=email] {
+    width: 55%;
+    padding: 10px;
+    border: 1px solid var(--Desaturated-Blue);
+    border-radius: 3px;
+    caret-color: var(--Desaturated-Blue);
+    color: var(--Desaturated-Blue);
+}
+
+.section .container input[type=email]:focus-visible {
+    outline: none;
+}
+
+.section .container input[type=submit] {
+    background-color: var(--Bright-Blue);
+    border: none;
+    color: var(--Light-Grayish-Blue);
+    font-weight: 700;
+    border-radius: 3px;
+    margin-left: 10px;
+    transition: 0.2s;
+    cursor: pointer;
+    padding: 10px 8%;
+    box-shadow: 2px 2px 2px 0 #0000002e;
+}
+
+.section .container input[type=submit]:hover {
+    background-color: var(--Bright-Blue-hover);
+    box-shadow: 3px 3px 2px 0 #00000026;
+}
+
+.section .container .img {
+    flex-basis: 50%;
+}
+
+.section .container .img img {
+    width: 100%;
+}
+
+.section .see {
+    color: var(--Moderate-Cyan);
+    transition: 0.2s;
+}
+
+.section .see:hover {
+    color: var(--Moderate-Cyan-hover);
+    border-bottom: 1px solid var(--Moderate-Cyan-hover);
+}
+
+.section:nth-child(4) {
+    background-color: #f8f8fe;
+    padding: 80px 0 100px;
+}
+
+.section:nth-child(4) .text {
+    flex-basis: 50%;
+}
+
+.section:nth-child(4) .text h1 {
+    font-size: 36px;
+}
+
+.section:nth-child(4) .text p {
+    max-width: 540px;
+}
+
+.section:nth-child(4) .img {
+    flex-basis: 45%;
+}
+
+.before {
+    background-color: white;
+    transform: translateY(85px);
+}
+
+.before img {
+    width: 100%;
+}
+
+.card {
+    text-align: start !important;
+    background-color: white;
+    box-shadow: 0 0 10px 0 #0000003d;
+    border-radius: 4px;
+    padding: 26px;
+    margin-top: 40px;
+    max-width: 380px;
+}
+
+.card p {
+    margin: 10px 0 !important;
+}
+
+.card .user {
+    display: flex;
+    align-items: center;
+}
+
+.card .user img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 14px;
+}
+
+.card .user span {
+    display: block;
+    font-weight: 700;
+}
+
+.contact {
+    background-color: var(--Desaturated-Blue);
+    padding: var(--margin) 0;
+}
+
+.contact .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 1.3;
+}
+
+.contact p {
+    max-width: 500px;
+}
+
+.contact .text {
+    flex-basis: 45%;
+    color: var(--Light-Grayish-Blue);
+}
+
+.contact h1 {
+    margin-bottom: 20px;
+    color: var(--Light-Grayish-Blue);
+}
+
+.contact form {
+    flex-basis: 45%;
+}
+
+.contact form input[type=email] {
+    width: 80%;
+    padding: 12px;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    color: var(--Desaturated-Blue);
+    margin-bottom: 12px;
+    box-shadow: 2px 2px 2px 0 #0000002e;
+}
+
+form input[type=email]:invalid:not([value=""]) {
+    border: 1px solid red !important;
+    position: relative;
+    margin-bottom: 19px;
+}
+
+label {
+    position: relative;
+    display: inline;
+    position: absolute;
+    left: 0;
+    top: 33px;
+}
+
+label::after {
+    content: 'Please check your email';
+    width: 250px;
+    opacity: 0;
+    text-align: start;
+    bottom: -25px;
+    float: left;
+    color: red;
+    position: absolute;
+    font-size: 13px;
+}
+
+form input[type=email]:invalid:not([value=""])+label::after {
+    opacity: 1;
+}
+
+.contact label::after {
+    color: var(--Light-Grayish-Blue);
+}
+
+.contact form input[type=submit] {
+    background-color: var(--Bright-Blue);
+    color: var(--Light-Grayish-Blue);
+    border: none;
+    font-weight: 700;
+    border-radius: 3px;
+    transition: 0.2s;
+    cursor: pointer;
+    padding: 12px 30px;
+    box-shadow: 2px 2px 2px 0 #0000002e;
+}
+
+.contact form input[type=submit]:hover {
+    background-color: var(--Bright-Blue-hover);
+    box-shadow: 3px 3px 2px 0 #00000026;
+}
+
+footer {
+    background-color: var(--Very-Dark-Blue);
+    padding: 80px 0 40px 0;
+}
+
+footer .grid {
+    margin-top: 30px !important;
+}
+
+.grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.grid div:not(div:nth-child(1)) {
+    display: flex;
+    justify-content: space-around;
+    flex-basis: 23%;
+}
+
+.grid div:nth-child(1) {
+    display: flex;
+    flex-basis: 25%;
+    flex-direction: column;
+}
+
+.grid div a {
+    color: var(--Light-Gray);
+    transition: 0.1s;
+}
+
+.grid a img {
+    margin-right: 14px;
+    height: fit-content;
+}
+
+.grid div:not(div:nth-child(4)) a {
+    display: flex;
+    margin: 0 0 20px 0;
+}
+
+.grid div:nth-child(4) li {
+    border: 1px solid var(--Light-Gray);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.grid a:hover {
+    color: var(--Bright-Blue);
+}
+
+.attribution {
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+    color: whitesmoke;
+    margin-top: 25px;
+    margin-bottom: -20px;
+}
+
+.attribution a {
+    color: var(--Bright-Blue);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.attribution a:hover {
+    color: var(--Bright-Blue-hover);
+    text-decoration: underline;
+}
+
+@media (max-width: 992px) {
+    .section .container input[type=email] {
+        display: block;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .section .container input[type=submit] {
+        display: block;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .contact form input[type=email] {
+        width: 90%;
+    }
+
+    .grid {
+        font-size: 13px;
+    }
+
+    .grid div:nth-child(1) {
+        flex-basis: 27%;
+    }
+}
+
+@media (max-width: 675px) {
+    .section .container {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .section .container .img {
+        margin-bottom: 50px;
+    }
+
+    .card {
+        justify-self: center;
+        margin: 40px auto;
+    }
+
+    .contact .container {
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .contact .container p {
+        margin-bottom: 20px;
+    }
+
+    .contact form input {
+        width: 100% !important;
+    }
+
+    .grid div {
+        flex-basis: 50% !important;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 675px) {
+    h1 {
+        font-size: 30px !important;
+    }
+
+    nav img {
+        width: 80px;
+    }
+
+    nav .container ul {
+        font-size: 13px;
+    }
+
+    nav .container li:nth-child(2) {
+        margin: 0 15px;
+    }
+
+    .grid {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .grid div {
+        margin-bottom: 30px;
+    }
+
+    .grid div:nth-child(4) {
+        align-self: center;
+    }
+}
+
+@media (max-width: 310px) {
+    h1 {
+        font-size: 20px !important;
+    }
+
+    nav .container {
+        flex-direction: column;
+    }
+
+    nav .container ul {
+        border-top: 1px solid var(--Light-Gray);
+        width: 90%;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    form input[type=email]+label::after {
+        display: none;
+    }
+
+    .card .user {
+        margin-top: 20px;
+        flex-direction: column;
+        text-align: center !important;
+    }
+
+    .grid div:nth-child(4) {
+        align-self: flex-start;
+    }
+
+    .card {
+        font-size: 12px !important;
+        padding: 15px 10px !important;
+    }
+
+    footer .logo {
+        width: 80px;
+    }
+
+    .grid div:nth-child(1) ul a {
+        flex-direction: column;
+    }
+
+    .grid div:nth-child(1) ul a img {
+        width: 16px;
+        margin-bottom: 10px;
+    }
+
+    .contact form {
+        max-width: 100%;
+    }
+}

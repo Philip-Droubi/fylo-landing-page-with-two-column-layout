@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="Imges/favicon-32x32.png">
+    <link rel="stylesheet" href="Css/all.min.css">
+    <link rel="stylesheet" href="Css/main.css">
+    <title>Frontend Mentor | fylo-landing-page-with-two-column-layout-master</title>
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <a href="#"><img src="images/logo.svg" alt="Fylo logo"></a>
+            <ul>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Sign in</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="section">
+        <div class="container">
+            <div class="text">
+                <h1>All your files in one secure location, accessible anywhere.</h1>
+                <p>Fylo stores your most important files in one secure location. Access them wherever you need, share
+                    and collaborate with friends, family, and co-workers.</p>
+                <form action="#" method="post">
+                    <input type="email" value="" name="email" id="email1" required placeholder="Enter your email ..."
+                        onchange="this.setAttribute('value', this.value);"
+                        oninvalid="this.setCustomValidity('Please check your email')"
+                        oninput="this.setCustomValidity('')">
+                    <label class="email" for="email1"></label>
+                    <input type="submit" value="Get Started">
+                </form>
+            </div>
+            <div class="img"><img src="images/illustration-1.svg" alt="illustration-1"></div>
+        </div>
+    </div>
+    <!-- Second Section -->
+    <div class="before">
+        <img src="images/bg-curve-desktop.svg" alt="" aria-hidden="true">
+    </div>
+    <div class="section">
+        <div class="container">
+            <div class="text">
+                <h1>Stay productive, wherever you are</h1>
+                <p>Never let location be an issue when accessing your files. Fylo has you covered for all of your file
+                    storage needs. <br><br> Securely share files and folders with friends, family and colleagues for
+                    live
+                    collaboration. No email attachments required!</p>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="see">See how Fylo works <i
+                        class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+                <div class="card">
+                    <img src="images/icon-quotes.svg" alt="" aria-haspopup="true">
+                    <p>
+                        Fylo has improved our team productivity by an order of magnitude. Since making the switch our
+                        team has become a well-oiled collaboration machine.
+                    </p>
+                    <div class="user">
+                        <a href="#">
+                            <img src="images/avatar-testimonial.jpg" alt="image of Kyle Burton Founder & CEO">
+                        </a>
+                        <a href="#">
+                            <p><span>Kyle Burton</span> Founder & CEO,Huddle</p>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="img"><img src="images/illustration-2.svg" alt="illustration-2"></div>
+        </div>
+    </div>
+    <!-- contact -->
+    <div class="contact">
+        <div class="container">
+            <div class="text">
+                <h1>Get early access today</h1>
+                <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any
+                    questions, our support team would be happy to help you.</p>
+            </div>
+            <form action="#" method="post">
+                <input type="email" value="" name="email" id="email2" required placeholder="email@example.com"
+                    onchange="this.setAttribute('value', this.value);"
+                    oninvalid="this.setCustomValidity('Please check your email')" oninput="this.setCustomValidity('') ">
+                <label class="email" for="email2"></label>
+                <input type="submit" value="Get Started For Free">
+            </form>
+        </div>
+    </div>
+    <!--  Footer -->
+    <footer>
+        <div class="container">
+            <a href="#"><img src="images/logo_footer.svg" alt="Fylo logo" class="logo"> </a>
+            <div class="grid">
+                <div>
+                    <ul>
+                        <li><a href="tel:+1-543-123-4567"><img src="images/icon-phone.svg" alt=""
+                                    aria-hidden="true">Phone:
+                                +1-543-123-4567</a></li>
+                        <li><a href="mailto:example@fylo.com"><img src="images/icon-email.svg" alt=""
+                                    aria-hidden="true">example@fylo.com</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="#" target="_blank" rel="noopener noreferrer">About Us</a></li>
+                        <li><a href="#" target="_blank" rel="noopener noreferrer">Jobs</a></li>
+                        <li><a href="#" target="_blank" rel="noopener noreferrer">Press</a></li>
+                        <li><a href="#" target="_blank" rel="noopener noreferrer">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="#" target="_blank" rel="noopener noreferrer">Contact Us</a></li>
+                        <li><a href="#" target="_blank" rel="noopener noreferrer">Terns</a></li>
+                        <li><a href="#" target="_blank" rel="noopener noreferrer">Privacy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f "></i></a>
+                        </li>
+                        <li><a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter "
+                                    aria-hidden="true"></i></a></li>
+                        <li><a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"
+                                    aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="attribution">
+            <div class="container">
+                Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+                Coded by <a href="https://www.frontendmentor.io/profile/Philip-Droubi">Philip Droubi</a>.
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
